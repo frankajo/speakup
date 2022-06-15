@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Ministry of Justice | Login Page </title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="/assets/css/default/app.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/sweetAlert/sweetalert.css" />
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/sweetAlert/sweetalert.min.js"></script>
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <!-- ================== END BASE CSS STYLE ================== -->
+</head>
+<body class="pace-top">
+    <!-- begin #page-loader -->
+    <div id="page-loader" class="fade show"><span class="spinner"></span></div>
+    <!-- end #page-loader -->
+    <!-- begin #page-container -->
+    <div id="page-container" class="fade">
+        <!-- begin login -->
+        
+
+        
+<div class="login login-with-news-feed">
+    <!-- begin news-feed -->
+    <div class="news-feed">
+        <div class="news-image" style="background-image: url(../assets/img/login-bg/login-bg-2a.gif)"></div>
+        <div class="news-caption">
+            <h4 class="caption-title"><b>Ministry of Justice</b> Revenue Collection</h4>
+
+        </div>
+    </div>
+    <!-- end news-feed -->
+    <!-- begin right-content -->
+    <div class="right-content">
+        <!-- begin login-header -->
+        <div class="login-header">
+            <div class="">
+                <a href="/">
+                    <img src="/assets/img/bg/logo1.gif" height="50" width="50">
+                </a>
+                <span class="logo"></span> <b> Sign-Up </b>
+            </div>
+        </div>
+        <!-- end login-header -->
+        <!-- begin login-content -->
+        <div class="login-content">
+            <form asp-control="Account" class="margin-bottom-0" method="post" action="/Account/ApplicantSignUp">
+                
+
+                <label class="control-label f-w-700">Email <span class="text-danger">*</span></label>
+                <div class="row m-b-15">
+                    <div class="col-md-12">
+                        <input type="email" class="form-control" placeholder="Email Address" required data-val="true" data-val-email="The Email_Id field is not a valid e-mail address." data-val-required="Please enter Applicant Email id" id="Email_Id" name="Email_Id" value="" />
+                    </div>
+                </div>
+                <label class="control-label f-w-700">Phone Number <span class="text-danger">*</span></label>
+                <div class="row m-b-15">
+                    <div class="col-md-12">
+                        <input type="number" class="form-control" placeholder="080-xxxx-xxxx" required id="Phone" name="Phone" value="" />
+                    </div>
+                </div>
+
+                <label class="control-label f-w-700">Password <span class="text-danger">*</span></label>
+                <div class="row m-b-15">
+                    <div class="col-md-12">
+                        <input type="password" class="form-control" title="Password must have at least 1-capital letter, 1-special character and minimum length is 8" placeholder="Password" required data-val="true" data-val-length="The Password must be at least 8 and at max 50 characters long." data-val-length-max="50" data-val-length-min="8" data-val-regex="The Password does not meet requirements. It must contain at least one uppercase, numeric and special character" data-val-regex-pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W]).{8,}$" data-val-required="The Password field is required." id="Password" maxlength="50" name="Password" />
+
+                    </div>
+                </div>
+                <label class="control-label f-w-700"> Confirm Password <span class="text-danger">*</span></label>
+                <div class="row m-b-15">
+                    <div class="col-md-12">
+                        <input type="password" class="form-control" placeholder="Confirm Password" required data-val="true" data-val-equalto="Password must Match each other" data-val-equalto-other="*.Password" data-val-required="The ConfirmPassword field is required." id="ConfirmPassword" name="ConfirmPassword" />
+
+                    </div>
+                </div>
+                <div class="checkbox checkbox-css m-b-30">
+                    <div class="checkbox checkbox-css m-b-30">
+                        <input type="checkbox" id="agreement_checkbox" data-val="true" data-val-required="The Isconfirm field is required." name="Isconfirm" value="true">
+                        <label for="agreement_checkbox">
+                            By clicking Sign Up, you agree to our <a href="javascript:;">Terms</a> and that you have read our <a href="javascript:;">Data Policy</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="register-buttons">
+                    <button type="submit" class="btn btn-primary">Sign Up Now</button>
+                    <a class="btn btn-secondary" href="/">Click Here To Login</a>
+                </div>
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MgIm_CVGtFNjC3j38JcTny6fjWEY88jD-BeDXkBrl8MXucFrx84b1So0W7uK_JbgUODcSBseNutb0zQ8HC5el_bHRy45sReri4tYrYo15War2y1IWDxF3uIJ_78z3EMkVdd9Ruj3nAflHc_1wbfS1s" /><input name="Isconfirm" type="hidden" value="false"></form>
+            <hr />
+            <span class="text-center mb-0">
+                &copy; Copyright Ministry of Justice 2022 <br />
+
+            </span>
+
+        </div>
+        <!-- end login-content -->
+    </div>
+    <!-- end right-container -->
+</div>
+
+        <!-- end login -->
+        <!-- begin theme-panel -->
+       
+        <!-- end theme-panel -->
+    </div>
+    <!-- end page container -->
+    <!-- ================== BEGIN BASE JS ================== -->
+
+    <script src="/assets/js/app.min.js"></script>
+    <script src="/assets/js/theme/default.min.js"></script>
+    <script src="/sweetAlert/sweetalert.min.js"></script>
+    <script src="/assets/js/pwstrength.js"></script>
+
+    <script src="/assets/plugins/pwstrength-bootstrap/dist/pwstrength-bootstrap.min.js"></script>
+
+    
+    <script type="text/javascript">
+        jQuery(function ($) { $('#Password').pwstrength(); });
+        jQuery(function ($) { $('#ConfirmPassword').pwstrength(); });
+        jQuery(function ($) { $("#loader").hide(); });
+    </script>
+
+    
+
+    <!-- ================== END BASE JS ================== -->
+
+</body>
+</html>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5f3106a05c885a1b7fb7ba3b/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
