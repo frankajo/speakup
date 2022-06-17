@@ -36,6 +36,12 @@
 							background-color: rgba(0, 0, 0, 0.5);
 						}
 
+						#services{
+							text-align: center;
+							margin-top: 40px;
+							margin-bottom: 30px;
+						}
+
 						h1{
 							color: white;
 							font-style: italic;
@@ -62,6 +68,7 @@
 						h5{
 							color: purple;
 							font-style: italic;
+							text-align: center;
 						}
 
 
@@ -81,11 +88,9 @@
 
 	
 <!-- Nav Bar Starts here -->
-			<div class="row">
-
-				<div class="col-md-12">
-
-					<nav class="navbar navbar-expand-lg bg-light">
+	<div class="row">
+		<div class="col-md-12">
+		 <nav class="navbar navbar-expand-lg bg-light">
  			<div class="container-fluid" style="background-color:purple">
     			<a class="navbar-brand" href="#">Logo</a>
    				 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,10 +105,10 @@
        		     <a class="nav-link active" aria-current="page" href="about.html">About</a>
        			 </li>
        			 <li class="nav-item">
-       		     <a class="nav-link active" aria-current="page" href="service.html">Service</a>
+       		     <a class="nav-link active" aria-current="page" href="services.html">Service</a>
        			 </li>
        			 <li class="nav-item">
-       		     <a class="nav-link active" aria-current="page" href="#">Resource</a>
+       		     <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
        			 </li>
        			 <li class="nav-item">
        		     <a class="nav-link active" aria-current="page" href="#">Suport Us</a>
@@ -138,17 +143,11 @@
        			 </li>
       			  
       			</ul>
-     		 <form class="d-flex" role="search">
-     		   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-     		   <button class="btn btn-outline-success" type="submit">Search</button>
-     		 </form>
     		</div>
   		  </div>
 		</nav>
-
-				</div>
-
-			</div>
+	 </div>
+	</div>
 <!-- Nav Bar ends here -->			
 	
 
@@ -183,9 +182,7 @@
 
 <!-- OUR SERVICES -->
 <!-- ADVOCACY (Services) Start Here-->
-			<div class="row">
-				<div class="col-md-12" id="services">ADVOCACY</div>
-			</div>
+			
 
 
 			<div class="row">
@@ -207,7 +204,10 @@
                     <span>SpeakUp regularly engages companies in town hall sessions as a means of reaching the middle class. Faith based institutions Members of SpeakUp are on a continuous basis invited to speak about Sexual and Domestic Violence at churches and mosques. At such fora, members of the congregation and spiritual leaders are encouraged not to ask persons in abusive relationships to remain there or request victims of sexual assault to keep quiet but rather people should be encouraged to seek help. Pastors and Imams are also encouraged to speak about these issues and condemn them outrightly.</span>
 
 				</div>
-				<div class="col-md-6">
+
+				
+				<div class="col-md-6" id="services">
+					<div>ADVOCACY</div>
 					<img src="images/adv1.jpg" alt="my photo" class="img-fluid img-thumbnail">
 				</div>
 			</div>
@@ -216,14 +216,11 @@
 
 <!-- MEDICAL (Services) Start Here-->
 			<div class="row">
-				<div class="col-md-12" id="services">MEDICALS</div>
-			</div>
-
-
-			<div class="row">
 				<div class="col-md-6">
+					<div id="services">MEDICALS</div>
 					 <img src="images/med1.jpg" alt="my photo" class="img-fluid img-thumbnail">
 				</div>
+
 				<div class="col-md-6">
 
 					      <h5>MEDICAL SERVICES</h5>
@@ -237,11 +234,7 @@
 
 
 <!-- COUNCELING (Services) Start Here-->
-			<div class="row">
-				<div class="col-md-12" id="services">COUNCELING</div>
-			</div>
-
-
+			
 			<div class="row">
 				<div class="col-md-6">
 					<h5>Counceling</h5>
@@ -249,7 +242,9 @@
 
 					This is also relevant to help a victim of DV heal psychologically and emotionally from the various abuses the have gone through.</span>
 				</div>
+
 				<div class="col-md-6">
+					<div id="services">COUNCELING</div>
 					<img src="images/coun1.jpg" alt="my photo" class="img-fluid img-thumbnail">
 				</div>
 			</div>
@@ -258,14 +253,11 @@
 
 
 <!-- EMPOWERMENT (Services) Start Here-->
-			<div class="row">
-				<div class="col-md-12" id="services">EMPOWERNMENT</div>
-			</div>
-
-
+			
 			<div class="row">
 
 				<div class="col-md-6">
+					<div id="services">EMPOWERNMENT</div>
 					 <img src="images/emp2.jpg" alt="my photo" class="img-fluid img-thumbnail">
 				</div>
 
@@ -287,16 +279,10 @@
 
 
 <!-- Footer Div Start Here -->
-			<div class="row">		
-					    <div class="col-md-4">			
-					    <h5>Quick Link</h5>		             
-			              <p>About</p>
-			              <p>Services</p>
-			              <p>Support Us</p>
-			              <p>Contact Us</p> 
-					    </div>
+			<div class="row" style="padding: 30px; align-content: center; margin-top: 20px; 
+					 margin-left: 50px">
 
-					    <div class="col-md-4">
+						<div class="col-md-3">
 					    	<h5>Contact Us</h5>
 					    	 <p>Phone:+234-8088-330-2128</p>
 					    	 <p>Email: info@speakup.gmal</p>
@@ -304,28 +290,50 @@
 					    	 Ikeja, Lagos, Nigeria</p>
 					    	 <p>Open: 9am-5pm(Mon-Fri)</p>
 					    </div>
+					    		
+					   <div class="col-md-3">			
+					    <h5>Quick Link</h5>		             
+			              <p>About</p>
+			              <p>Services</p>
+			              <p>Support Us</p>
+			              <p>Contact Us</p> 
+					   </div>
 
-					    <div class="col-md-4">
+
+					    <div class="col-md-3">
 					    	<h5>SpeakUp</h5>
 					    	<span>If you need help immediately,<br>
 					    	please dial 911 or call our 24-hour<br> 
 					    	hotline at 234-8088-330-2128</span>
 					    </div>
 
+					    <div class="col-md-3">
+					    	<h5>Newsletter</h5>
+		        			<span>Join our weekly mailing list by filing the form..</span> 
+							<form style='padding:15px'>
+							<label>Fullname<input type='text'><br>
+		        			<label>E-mail<input type='email'><br><br>
+							<input type="submit" value="submit">
+							</form>
+					    </div>
+
 					</div>
 
 
 					    	<div class="row">
-					    		<div class="col-md-12" style="background-color: purple; border-radius:10px">
-					    			<p style="color:white; padding-top:40px" align="center"><i>@2022 by SpeakUp | Terms of Use | Privacy Policy...</i></p>
+
+					    		<div class="col-md-12" style="background-color: purple; border-radius: 10px">
+					    			<p style="color:white; padding-top:10px" align="center"><i>@2022 by SpeakUp / Terms of Use / Privacy Policy...</i></p>
 					    		</div>
 					    	</div>
+
+
 <!-- Footer Div Ends Here -->
 
 				
 					
 		
-<!--losing of div container -->
+<!--Closing of div container -->
 </div>
 					    			
 
