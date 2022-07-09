@@ -1,0 +1,318 @@
+
+<?php 
+	include_once("header.php");
+?>
+
+<!DOCTYPE html>
+
+	<html lang="en">
+		
+
+
+		    <head>
+		    	
+		<title>Home Page</title>
+
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.css">
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+
+
+
+					<style>
+
+						div{
+							/*border: 1px solid black;
+							min-height: 100px;*/
+						}
+
+
+			/* Navigation start here */
+						#nav{
+							background-color: black;
+							border-radius: 20px;
+						}
+
+						#logoimg{
+							height: 130px;
+							border-radius: 50px;
+						}
+
+						ul li{
+
+								display: inline-block;
+								padding-left: 30px;
+								padding-bottom: 20px;
+								margin-top: 50px;
+								text-decoration: none;
+							}
+
+						ul li a{
+							text-decoration: none;
+							color: white;
+						}
+
+						#navDropdown{
+							color: white;
+						}
+
+			/* Navigation ends here */
+
+
+			/*background picture start here*/
+						#background{
+							background-image: url(images/spk4.jpg);
+							height: 650px;
+							background-repeat: no-repeat;
+							background-size: cover;
+							background-attachment: fixed;
+						} 
+
+						#overlay{
+							background-color: black;
+							height: 650px;
+							background-color: rgba(0, 0, 0, 0.5);
+						}
+			/*background picture ends here*/
+
+						#services{
+							text-align: center;
+							margin-top: 40px;
+							margin-bottom: 30px;
+						}
+
+						h1{
+							color: white;
+							font-style: italic;
+							font-family: algerian;
+							text-align: center;
+							padding-top: 300px;
+						}
+						
+						h3{
+							color: black;
+							text-align: center;
+							font-style: italic;
+						}
+
+						#services{
+							text-align: center;
+							font-family:corbel, arial, san-serif;
+							font-style: italic;
+							font-size: 20px;
+							color: purple;
+							margin-top: 10px;
+						}
+
+
+			/*Footer start here*/
+						#footer{
+							background-color: black;
+							border-radius: 10px;
+						}
+
+						li a{
+							text-decoration: none;
+							color: black;
+						}
+
+						
+						h5{
+							color: black;
+							font-style: italic;
+							text-align: center;
+						}
+			/*Footer ends here*/
+
+
+						
+					</style>
+
+		    </head>
+
+
+
+			  <body>
+			  
+
+
+<div class="container">
+<!-- Opening of div container -->
+
+
+<!-- Background image (fixed) start here -->
+			<div class="row">
+				<div class="col-md-12 mt-2" id="background">
+					<div id="overlay">
+						<h1>Support Us</h1>
+
+	 		<button type="submit" id="btnlogin" class="btn btn-secondary" style="margin-left: 600px;">
+	 			<a href="signup_partner.php" style="text-decoration: none; color: white;">Sign-Up</a></button>
+
+					</div>
+				</div>
+
+			</div>
+<!-- Background image (fixed) Ends here -->
+
+
+
+<!-- marquee start here -->	
+		<div class="row">
+		<div class="col-md-12" style="background-color:black; margin-top:10px; margin-bottom: 10px; border-radius: 30px">
+			<marquee>
+               <h6 style="margin-top:30px; padding-bottom: 10px; color: white";>We are commited to bringing justice to your doorstep</h6>
+            </marquee>
+		</div>
+		</div>	
+<!-- marquee ends here -->
+
+
+
+			<div class="row">
+				<div class="col-md-12 mt-3">
+					<h3>Donate</h3>
+				</div>
+			</div>
+
+
+			<div class="row">	
+			<img src="images/donate5.jpg" alt="myphoto" class="img-fluid img-thumbnail">	
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 mt-3"></div>
+				<div class="col-md-6 mt-3"></div>
+			</div>
+
+
+
+
+<!-- Volunteers for support start here -->
+			<div class="row">
+				<div class="col-md-12 mt-3">
+					<h3>Volunteer</h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mt-3">
+				<img src="images/vol4.jpg" alt="myphoto" class="img-fluid img-thumbnail">		
+				</div>
+
+				<div class="col-md-4 mt-3">
+				<img src="images/vol3.jpg" alt="myphoto" class="img-fluid img-thumbnail">		
+				</div>
+
+				<div class="col-md-4 mt-3">
+				<img src="images/vol2.jpg" alt="myphoto" class="img-fluid img-thumbnail">	
+				</div>
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12 mt-3">
+					<h6 style="text-align: center; font-style: italic; font-size: 20px; font-family: monospace;">Here are some ways you can volunteer</h6>
+				</div>
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-md-4 mt-3">
+					<p align="center" style="color:red"><i class="fas fa-phone"></i></p>
+					
+                          <h5>Crisis Line Advocate</h5>
+                    <span>      
+                       Hotline advocates answer SpeakUp 24-hour hotline from our confidentially-located safe house. Advocates screen for admittance to the house, help callers create plans for their safety, offer information about SpeakUp services, explore resources and provide referrals. 
+                    </span>
+				</div>
+
+				<div class="col-md-4 mt-3">
+					 
+						<p align="center" style="color:red"><i class="fas fa-home"></i></p>
+                          <h5>Safe House Advocate</h5>
+                    <span>
+                       Volunteer positions at the safe house include both direct and indirect service opportunities including infant and toddler care, assisting with children's activities, transportation assistance, providing activities or educational opportunities for guests, one-on-one peer advocacy, and organization of donations. 
+                    </span>
+
+				</div>
+
+				<div class="col-md-4 mt-3">
+					
+						<p align="center" style="color:red"><i class="fas fa-child"></i></p>
+                         <h5>Children's Advocate</h5>
+                    <span>
+                       Volunteers spend quality time with child and teenage safe house guests, developing trusting relationships and modeling healthy interactions with others. Mentors help with homework, play games, supervise art projects, facilitate conversation groups, and chaperone outings. 
+                    </span>
+
+				</div>
+				
+			</div>
+<!-- Volunteers for support ends here -->
+
+
+<!--The Footer Div Here-->					    			
+					<div class="row mt-3">
+
+					<div class="col-md-4">			
+					    <h5>Quick Link</h5>		              
+	       	     		<li><a href='about.html'>About Us</a></li>
+		   		 		<li><a href='services.html'>Services</a></li>
+		    	 		<li><a href='contactus.html'>Contact Us</a></li>
+		    	 		<li><a href='support.html'>Support Us</a></li>
+		    	 		<li><a href='news.html'>News</a></li>
+		    			 <li><a href='offices.html'>Offices</a></li>
+					 </div>
+
+						<div class="col-md-4">
+					    	<h5>Contact Us</h5>
+					    	 <p>Phone:+234-8088-330-2128</p>
+					    	 <p>Email: info@speakup.gmal</p>
+					    	 <p>Address: Plot2, No11, Military Avenue<br>
+					    	 Ikeja, Lagos, Nigeria</p>
+					    	 <p>Open: 9am-5pm(Mon-Fri)</p>
+					    </div>
+					    
+
+					    <div class="col-md-4">
+					    	<h5>SpeakUp</h5>
+					    	<p>If you need help immediately,<br>
+					    	please dial 911 or call our 24-hour<br> 
+					    	hotline at 234-8088-330-2128</p>
+					    	
+					    </div>
+
+					</div>
+
+
+					    	<div class="row">
+
+					    		<div class="col-md-12 mt-3" id="footer">
+					    			<p style="color:white; padding-top:10px" align="center"><i>@2022 by SpeakUp / Terms of Use / Privacy Policy...</i></p>
+					    		</div>
+					    	</div>
+
+<!-- Footer Div Ends Here -->
+
+				
+				
+					
+		
+<!--Closing of div container -->
+</div>
+
+ 	
+ <!--JS File-->
+	 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+			    	</body>
+
+
+	</html>
