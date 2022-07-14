@@ -77,7 +77,7 @@
 					session_start();
 					$_SESSION['partner_id'] = $row['partner_id'];
 					$_SESSION['victimid'] = $row['victim_id'];
-					$_SESSION[''] = $row['']
+					$_SESSION[''] = $row[''];
 
 					return true;
 

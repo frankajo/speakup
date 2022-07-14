@@ -60,37 +60,6 @@
 <!--The Footer Div Here-->					    			
 					<div class="row mt-3">
 
-					<div class="col-md-4">			
-					    <h5>Quick Link</h5>		              
-	       	     		<li><a href='about.html'>About Us</a></li>
-		   		 		<li><a href='services.html'>Services</a></li>
-		    	 		<li><a href='contactus.html'>Contact Us</a></li>
-		    	 		<li><a href='support.html'>Support Us</a></li>
-		    	 		<li><a href='news.html'>News</a></li>
-		    			 <li><a href='offices.html'>Offices</a></li>
-					 </div>
-
-						<div class="col-md-4">
-					    	<h5>Contact Us</h5>
-					    	 <p>Phone:+234-8088-330-2128</p>
-					    	 <p>Email: info@speakup.gmal</p>
-					    	 <p>Address: Plot2, No11, Military Avenue<br>
-					    	 Ikeja, Lagos, Nigeria</p>
-					    	 <p>Open: 9am-5pm(Mon-Fri)</p>
-					    </div>
-					    
-
-					    <div class="col-md-4">
-					    	<h5>SpeakUp</h5>
-					    	<span>If you need help immediately,<br>
-					    	please dial 911 or call our 24-hour<br> 
-					    	hotline at 234-8088-330-2128</span>
-					    	<a href="home.html"><i class="fas fa-phone"></i></a>
-					    </div>
-
-					</div>
-
-
 					    	<div class="row">
 
 					    		<div class="col-md-12 mt-3" id="footer">
@@ -99,7 +68,7 @@
 					    	</div>
 
 <!-- Footer Div Ends Here -->
-
+					</div>
 				
 					
 		

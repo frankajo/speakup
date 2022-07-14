@@ -17,89 +17,88 @@ session_start();
 			background-image: url(images/lib2.jpg);
 			background-position: center;
 			background-size: cover;
-			/*font-family: sans-serif;
-			margin-top: 40px;*/
+			font-family: sans-serif;
+			margin-top: 40px;
 			}
 	</style>
 </head>
-<body><!-- 
+<body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h1>Speak Up</h1>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<div class="container-fluid mt-4">
 		<div class="row">
-			<div class="col-md-3" style="border-right: 1px solid #808080">
+			<div class="col-md-6">
 
 				<!-- includ victim nave inside the php -->
-				<?php ?>
-			</div>
-			<div class="col-md-5 mt-4">
-				<h2 style="margin-top: 0px">Victim's Complaints</h2>
+
+
 				<?php  
 					//session_start();
 					if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-						include_once "speak/complaint.php";
+						include_once "speak/response.php";
 
-						$compobj = new Complaint();
+						$resobj = new Response();
 						
 						
+						$partnerid = $_SESSION['partner_id'];
+						$supportid = $_SESSION['support_id'];
 
-						$victimid = $_SESSION['victim_id'];
-						$violenceid = $_SESSION['violence_id'];
+						var_dump($partnerid);
 
-						var_dump($violenceid);
-
-						$output = $compobj->insertComplaint($victimid, $_POST['vio'], $_POST['message']);
+						$output = $resobj->insertResponse($partnerid, $_POST['sup'], $_POST['message']);
 
 						if ($output == true) {
 							# redirect
-							header("Location: dashboard_victim.php");
+							header("Location: dashboard_partner.php");
 							exit;
 						}else{
-							echo "<div class='alert alert-danger'>Could not add complaints now. Try again later!</div>";
+							echo "<div class='alert alert-danger'>Could not add response now. Try again later!</div>";
 						}
 					}
 				?>
+
+
 				<form method="post" action="">
 					<div class="mb-3">
-						<label for="vio">Violence</label>
-						<select name="vio" id="vio" class="form-select">
-							<option value="">Choose Violence</option>
+						<label for="sup">Support</label>
+						<select name="sup" id="sup" class="form-select">
+							<option value="">Choose Support</option>
 
 							<?php  
-								include_once "speak/complaint.php";
+								include_once "speak/response.php";
 
 							//create object of class Complaint
-								$obj = new Complaint();
+								$obj = new Response();
 
 							//make refrence to getViolence
-								$vois = $obj->getViolencetype();
+								$suprts = $obj->getSupporttype();
 
-								foreach ($vois as $key => $violence) {
-									$voilenceid = $violence['violence_id'];
-									$violencetype = $violence['violence_type'];
+								foreach ($suprts as $key => $support) {
+									$supportid = $support['support_id'];
+									$supporttype = $support['support_type'];
 
-							if ($voilenceid == $data['violence_id']) {
-                        echo "<option value='$voilenceid' selected>$violencetype </option>";
+							if ($supportid == $data['support_id']) {
+                        echo "<option value='$supportid' selected>$supporttype </option>";
                       }else{
 
-                      echo "<option value='$voilenceid'>$violencetype</option>";
+                      echo "<option value='$supportid'>$supporttype</option>";
                     }
 
 
-								}
-							?>
+				}
+			?>
 
 						</select>
 					</div>
 					
 					<div class="mb-3">
-						<label for="message">Complaints</label>
+						<label for="message">Support</label>
 						<textarea name="message" id="message" class="form-control"></textarea>
 					</div>
 

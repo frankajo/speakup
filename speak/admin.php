@@ -1,10 +1,11 @@
 <?php 
+session_start();
 
 #import constant file
 	include_once("constants.php");
 
 #define class victim
-		class Amin{
+		class Admin{
 
 		//member variable
 			public $fullname;

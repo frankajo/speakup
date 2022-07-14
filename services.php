@@ -1,3 +1,6 @@
+
+<?php include_once "header.php"; ?>
+
 <!DOCTYPE html>
 
 	<html lang="en">
@@ -28,40 +31,9 @@
 						}
 
 
-			/* Navigation start here */
-						#nav{
-							background-color: black;
-							border-radius: 20px;
-						}
-
-						#logoimg{
-							height: 130px;
-							border-radius: 50px;
-						}
-
-						ul li{
-
-								display: inline-block;
-								padding-left: 30px;
-								padding-bottom: 20px;
-								margin-top: 50px;
-								text-decoration: none;
-							}
-
-						ul li a{
-							text-decoration: none;
-							color: white;
-						}
-
-						#navDropdown{
-							color: white;
-						}
-
-			/* Navigation ends here */
-
-
 			/*background picture start here*/
 						#background{
+							margin-top: 15px;
 							background-image: url(images/just1.jpg);
 							height: 650px;
 							background-repeat: no-repeat;
@@ -105,26 +77,6 @@
 							margin-top: 10px;
 						}
 
-
-			/*Footer start here*/
-						#footer{
-							background-color: black;
-							border-radius: 10px;
-						}
-
-						li a{
-							text-decoration: none;
-							color: black;
-						}
-
-						
-						h5{
-							color: black;
-							font-style: italic;
-						}
-			/*Footer ends here*/
-
-
 						
 					</style>
 
@@ -140,46 +92,6 @@
 <!-- Opening of div container -->
 
 	
-	<!-- Nav Bar Starts here -->
-
-	<div class="row" id="nav">
-
-		<div class="col-md-2">
-			<img src="images/logo.jpg" alt="mylogo" id="logoimg">
-		</div>
-
-		<div class="col-md-10">
-		  <ul style="list-style: none;">
-	      		<li><a href='home.php'>Home</a></li>
-	       	     <li><a href='about.php'>About Us</a></li>
-		   		 <li><a href='services.php'>Services</a></li>
-		    	 <li><a href='contactus.php'>Contact Us</a></li>
-		    	 <li><a href='support.php'>Support Us</a></li>
-		    	 <li><a href='news.php'>News</a></li>
-		    	 <li><a href='offices.php'>Offices</a></li>
-
-
-		   		<li class="nav-item dropdown">
-		   		 	<a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Media</a>
-
-		   		 	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-           		 <li><a class="dropdown-item" href="photos.php">Photo Galary</a></li>
-            	 <li><a class="dropdown-item" href="videos.php">Videos</a></li>
-             	 <li><hr class="dropdown-divider"></li>
-                 <li><a class="dropdown-item" href="project.php">Projects</a></li>
-          		</ul>
-
-		   		 </li>
-		  </ul>
-		</div>
-
-	</div>
-		<!-- Nav Bar ends here -->			
-	
-
-
-
-
 <!-- Background image (fixed) start here -->
 			<div class="row">
 				<div class="col-md-12" id="background">
@@ -313,55 +225,6 @@
 <!-- EMPOWERMENT (Services) Ends Here-->
 <!-- OUR SERVICES ENDS HERE-->
 
-
-
-
-<!--The Footer Div Here-->					    			
-					<div class="row mt-3">
-
-					<div class="col-md-4">			
-					    <h5>Quick Link</h5>		              
-	       	     		<li><a href='about.html'>About Us</a></li>
-		   		 		<li><a href='services.html'>Services</a></li>
-		    	 		<li><a href='contactus.html'>Contact Us</a></li>
-		    	 		<li><a href='support.html'>Support Us</a></li>
-		    	 		<li><a href='news.html'>News</a></li>
-		    			 <li><a href='offices.html'>Offices</a></li>
-					 </div>
-
-						<div class="col-md-4">
-					    	<h5>Contact Us</h5>
-					    	 <p>Phone:+234-8088-330-2128</p>
-					    	 <p>Email: info@speakup.gmal</p>
-					    	 <p>Address: Plot2, No11, Military Avenue<br>
-					    	 Ikeja, Lagos, Nigeria</p>
-					    	 <p>Open: 9am-5pm(Mon-Fri)</p>
-					    </div>
-					    
-
-					    <div class="col-md-4">
-					    	<h5>SpeakUp</h5>
-					    	<span>If you need help immediately,<br>
-					    	please dial 911 or call our 24-hour<br> 
-					    	hotline at 234-8088-330-2128</span>
-					    	<a href="home.html"><i class="fas fa-phone"></i></a>
-					    	<i class="fa-solid fa-phone"></i>
-					    </div>
-
-					</div>
-
-
-					    	<div class="row">
-
-					    		<div class="col-md-12 mt-3" id="footer">
-					    			<p style="color:white; padding-top:10px" align="center"><i>@2022 by SpeakUp / Terms of Use / Privacy Policy...</i></p>
-					    		</div>
-					    	</div>
-
-<!-- Footer Div Ends Here -->
-
-				
-				
 					
 		
 <!--Closing of div container -->
@@ -377,7 +240,7 @@
 
 	 </script>
 
-			    	</body>
-
-
+		</body>
 	</html>
+
+	<?php include_once "footer.php"; ?>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 	<html lang="en">
@@ -103,7 +104,7 @@
           		</ul>
 		   	   </li>
 
-		   	   <li><a href='signup.php'>SignUp</a></li>
+		   	   <li><a href='login_victim.php'>Logout</a></li>
 		  </ul>
 		</div>
 

@@ -1,5 +1,4 @@
 
-
 <?php 
 
  include_once("header.php");
@@ -106,11 +105,6 @@
 	 		<div>
 	 		<button type="submit" id="btnlogin" class="btn btn-secondary form-control">Login here</button>
 	 	    </div><br>
-
-	 	    <!-- <div>
-	 		<button type="submit" id="btnlogin" class="btn btn-danger form-control">
-	 			<a href="login_partner.php">Login as Partner</a></button>
-	 	    </div><br> -->
 
 	 	     <div>
 	 		<button type="submit" id="btnlogin" class="btn btn-info form-control">

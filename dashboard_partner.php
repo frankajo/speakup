@@ -1,6 +1,7 @@
 
   <?php 
-    include_once("header.php");
+  session_start();
+  include_once "nav_partner.php";
   ?>
 
   <!-- Page Content -->
@@ -14,23 +15,37 @@
         if(isset($_SESSION['myrole'])){
             echo $_SESSION['myrole'];
         }
+
       ?>
       
-      <small>Partners Page</small>
+      <small>Partner's Page</small>
     </h1>
+
+        <h5>Welcome
+          <?php
+
+            if (isset($_SESSION['fullname'] )) {
+          echo $_SESSION['fullname'];
+
+        }
+
+        
+        ?>
+            <!-- <br>feel free to speak up. -->
+        </h5>
 
            <!-- Icon Cards 1-->
         <div class="row">
 
           <div class="col-xl-4 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-secondary o-hidden h-100">
               <div class="card-body">
                 <div>
                   <i class="fa fa-users" style='font-size:24px'></i>
                 </div>
-                <div class="mr-5">Parners</div>
+                <div class="mr-5">Partner</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="complaint.php">
+              <a class="card-footer text-white clearfix small z-1" href="">
                 <span class="float-left">View Complaint</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
@@ -41,14 +56,14 @@
 
 
           <div class="col-xl-4 col-sm-6 mb-3">
-            <div class="card text-white bg-success o-hidden h-100">
+            <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
                 <div>
                   <i class="fa fa-comment"></i>
                 </div>
-                <div class="mr-5">Feedback</div>
+                <div class="mr-5">Partner</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="">
+              <a class="card-footer text-white clearfix small z-1" href="addresponse.php">
                 <span class="float-left">Add Response</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
@@ -57,23 +72,23 @@
             </div>
           </div>
 
+
           <div class="col-xl-4 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card text-white bg-secondary o-hidden h-100">
               <div class="card-body">
                 <div>
-                  <i class="fa fa-users" style='font-size:24px'></i>
+                  <i class="fa fa-comment"></i>
                 </div>
-                <div class="mr-5">Parners</div>
+                <div class="mr-5">Partner</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="complaint.php">
-                <span class="float-left">View Complaint</span>
+              <a class="card-footer text-white clearfix small z-1" href="allcomplaint.php">
+                <span class="float-left">View All Complaints</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
                 </span>
               </a>
             </div>
           </div>
-
 
     
   <!-- /.row -->
@@ -86,6 +101,6 @@
   <!-- /.container -->
 
   <?php 
-    include_once("footer.php");
+    include_once("logfooter.php");
   ?>
   

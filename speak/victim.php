@@ -102,7 +102,7 @@
 				session_destroy();
 
 	//redirect to login
-				header("Location: login.php");
+				header("Location: victim_login.php");
 				exit();
 			}
 #End logout

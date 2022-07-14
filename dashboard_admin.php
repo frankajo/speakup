@@ -1,6 +1,7 @@
 
 	<?php 
 		include_once("header.php");
+    session_start();
 	?>
 
   <!-- Page Content -->
@@ -16,7 +17,7 @@
     		}
     	?>
     	
-      <small>Dashboard</small>
+      <small>Super Admin Dashboard</small>
     </h1>
 
            <!-- Icon Cards 1-->
@@ -28,10 +29,10 @@
                 <div>
                   <i class="fa fa-users" style='font-size:24px'></i>
                 </div>
-                <div class="mr-5">Members</div>
+                <div class="mr-5">Victims</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="complaint.php">
-                <span class="float-left">Lodge Complaint</span>
+                <span class="float-left">View All Victims</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
                 </span>
@@ -45,7 +46,7 @@
                 <div>
                   <i class="fa fa-list"></i>
                 </div>
-                <div class="mr-5">N5,000,000 Payment</div>
+                <div class="mr-5">Complaints</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="report.html">
                 <span class="float-left">View Details</span>
@@ -60,12 +61,12 @@
             <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div>
-                  <i class="fa fa-comment"></i>
+                  <i class="fa fa-users"></i>
                 </div>
-                <div class="mr-5">12 Announcements</div>
+                <div class="mr-5">Partners</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="">
-                <span class="float-left">View Details</span>
+                <span class="float-left">View All Partners</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
                 </span>
@@ -77,9 +78,9 @@
             <div class="card text-white bg-danger o-hidden h-100">
               <div class="card-body">
                 <div>
-                  <i class="fa  fa-ban"></i>
+                  <i class="fa  fa-comment"></i>
                 </div>
-                <div class="mr-5">13 Failed Transactions!</div>
+                <div class="mr-5">Partners Response!</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="">
                 <span class="float-left">View Details</span>
@@ -102,7 +103,7 @@
             <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
                 <div>
-                  <i class="fa fa-users" style='font-size:24px'></i>
+                  <i class="fa fa-" style='font-size:24px'></i>
                 </div>
                 <div class="mr-5">Members</div>
               </div>
@@ -138,7 +139,7 @@
                 <div>
                   <i class="fa fa-comment"></i>
                 </div>
-                <div class="mr-5">12 Announcements</div>
+                <div class="mr-5">10 Announcements</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="">
                 <span class="float-left">View Details</span>
@@ -155,7 +156,7 @@
                 <div>
                   <i class="fa  fa-ban"></i>
                 </div>
-                <div class="mr-5">13 Failed Transactions!</div>
+                <div class="mr-5">5 Failed Transactions!</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="">
                 <span class="float-left">View Details</span>
@@ -174,6 +175,6 @@
   <!-- /.container -->
 
   <?php 
-		include_once("footer.php");
+		include_once("logfooter.php");
 	?>
 	

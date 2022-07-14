@@ -28,49 +28,93 @@ class Complaint{
 
 #Begin getViolence
 
-	public function getViolencetype(){
+		public function getViolencetype(){
 
-		// prepare statement
-		$statement = $this->dbcon->prepare("SELECT violence_id, violence_type FROM violence");
+			// prepare statement
+				$statement = $this->dbcon->prepare("SELECT violence_id, violence_type FROM violence");
 
-		// excute
-		$statement->execute();
+			// excute
+				$statement->execute();
 
-		// fetch result
-		$result = $statement->get_result();
+			// fetch result
+				$result = $statement->get_result();
 
-		$records = array();
-		if ($result->num_rows > 0) {
-			while ($row = $result->fetch_assoc()) {
+				$records = array();
+				if ($result->num_rows > 0) {
+				while ($row = $result->fetch_assoc()) {
 				$records[] = $row;
+				}
 			}
-		}
 
-		return $records;
-	}
+			return $records;
+		}
 #End getViolence
 
 
 #insert complaint method begins here
-		public function insertComplaint( $victimid, $violenceid, $message){
+		public function insertComplaint($victimid, $violenceid, $message){
 
-		//prepare the statement
-			$statement = $this->dbcon->prepare("INSERT INTO complaint(victim_id, violence_id, message) VALUES(?,?,?)");
+			//prepare the statement
+				$statement = $this->dbcon->prepare("INSERT INTO complaint(victim_id, violence_id, message) VALUES(?,?,?)");
 
-		//bind pthe parameter
-			$statement->bind_param("iis", $victimid, $violenceid, $message);
+			//bind pthe parameter
+				$statement->bind_param("iis", $victimid, $violenceid, $message);
 
-		//execute means to click GO inside mql
-			$statement->execute();
+			//execute means to click GO inside mql
+				$statement->execute();
 
-		//check if record was inserted
-			if($statement->affected_rows == 1){
+			//check if record was inserted
+				if($statement->affected_rows == 1){
 				return true;
-			}else{
+				}else{
 				return false;
 			}
 		}
-#insert message method ends here
+#insert Complaint method ends here
+
+
+#Begin listComplaint here
+
+		public function listComplaint(){
+			// prepare statement
+				$stmt = $this->dbcon->prepare("SELECT * FROM complaint LEFT JOIN victim ON victim.victim_id = complaint.victim_id");
+
+			// execute
+				$stmt->execute();
+
+			// get result
+				$result = $stmt->get_result();
+
+			// fetch records
+				$records = array();
+				if ($result->num_rows > 0){
+				while ($row = $result->fetch_assoc()){
+				$records[] = $row;
+				}
+			}
+
+			return $records;
+		}
+#End listComplait here
+
+
+#Begin getComplaint
+		public function getComplaint($complaintid){
+			// prepare statement
+				$stmt = $this->dbcon->prepare("SELECT * FROM complaint WHERE complaint_id=?");
+
+			// bind the parameter
+				$stmt->bind_param("i", $complaintid);
+
+			// execute
+				$stmt->execute();
+
+			// get result
+				$result = $stmt->get_result();
+
+				return $result->fetch_assoc();
+		}
+#End getComplaint
 
 	}
 ?>

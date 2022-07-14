@@ -1,83 +1,156 @@
-  <?php 
-    session_start();
- 
 
-   include_once("header.php");
 
-  if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+<?php 
 
-    // include class file
-    include_once("speak/admin.php");
+ include_once("header.php");
 
-    // create object of admin class
-    $ptobj = new Partner();
+//start session here
+  session_start();
 
-    // make reference to login function
-    $login = $ptobj->login($_POST['username'], $_POST['pwd']);
+//check if the user clicked the login button
+  if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-    // echo "$login";
+//include class file
+    include_once('speak/partner.php');
 
-      if ($login == false){
-          $error = "<div class='alert alert-danger'>Invalid Username or Password</div>";
-      }else{
-        // login successfully, then redirect to dashboard
-        header("Location: dashboard_partner.php");
+//create object of victim class
+    $obj = new Partner();
+
+//to make reference to login funtion
+    $output = $obj->login($_POST['username'], $_POST['password']);
+
+    if($output == false){
+      $errors = "<div class= 'alert alert-danger'>Invalid username or password</div>";
+
+    }else{
+// login successfull, then redirect to dashboard/landing page
+      header("Location: dashboard_partner.php");
         exit();
-
-      }
     }
 
+  }
+
+
 ?>
 
-<!-- Page Content -->
-  <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3 text-center">Partner
-      <small>Login</small>
-    </h1>
 
-    <?php 
-      if (isset($error)){
-        echo $error;
-      }
+<!DOCTYPE html>
 
-      if (isset($_GET['m'])){
-      echo "<div class='alert alert-danger'>".$_GET['m']."</div>";
-      ?>
-
-      <script type="text/javascript">
-        alert('<?php echo $_GET['m'] ?>');
-      </script>
-      <?php 
-     }
-    ?>
+  <html lang="en">
     
 
-    <div class="row" style='min-height:400px;'>
-      <div class="col-lg-8 col-md-8  offset-md-2 offset-lg-2 col-sm-12">
-          <form action="" method="post">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Username</label>
-                  <input type="text" name='username' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div><hr>
 
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" name='pwd' class="form-control" id="exampleInputPassword1">
-                </div><br><br>
-                
-                <button type="submit" class="btn btn-info btn-block">Login</button>
-        </form>
-      </div>
+        <head>
+          
+    <title></title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     
-     
-      
-     
-      
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+
+
+
+  <style></style>
+
+        </head>
+        <body>
+        
+
+
+<div class="container">
+<!-- Opening of div container -->
+
+
+
+  <div class="row">
+
+<!-- Image of Justice -->
+    <div class="col-md-8 mt-2">
+      <img src="images/just2.jpg" alt="my photo" class="" width="740px">
     </div>
+
+
+<!-- Form dive Start here -->
+    
+    <div class="col-md-4 mt-4" mt-4>
+        <h5 align="center">Login</h5>
+
+        <?php 
+          if(isset($error)){
+            echo $error;
+          }
+        ?>
+
+
+      <form method="post" action="" onsubmit="return login()">
+        
+      <div>
+      <input type="text" name="username" id="username" class="form-control" placeholder="User Name"><br>   </div>     
+      
+      <div>
+      <input type="text" name="password" id="password" class="form-control" placeholder="Password">
+      </div>  
+
+        <span style="font-size: 12px"> Forgot Password? Click <span style="color:blue">here</span> to reset <span style="color:blue">
+        </span></span><br>
+
+         <button type="button" class="btn-light" onclick="showpassword()">showpassword</button><br><br>
+        
+      <div>
+      <button type="submit" id="btnlogin" class="btn btn-secondary form-control">Login here</button>
+        </div><br>
+
+      <span style="font-size: 12px">Don't have an account yet? Click <span style="color:blue"><a href="signup.php">here</a></span> to sign up.
+      <span style="color:blue">
+        </span></span>
+    </form>
+   </div>
   </div>
 
-  <?php 
-    include_once("footer.php");
-?>
+
+</div>
+
+
+  
+ <!--JS File-->
+  
+    <script type="text/javascript" language='javascript'>
+
+      //login function start here
+          function login(){
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if(username.trim() =="" || password.trim() ==""){
+              alert("Please enter a valid username and password");
+              return false;
+            }else{
+              return true;
+            }
+          }
+
+          function showpassword(){
+            var showpassword = document.getElementById('password').type;
+
+            if(showpassword == 'password'){
+              document.getElementById('password').type='text';
+            }else{
+              document.getElementById('password').type='password';
+            }
+          }
+
+
+      //login function end here
+  </script>
+
+            </body>
+
+
+  </html>

@@ -145,7 +145,7 @@
 	 		<button name="btnregister" type="submit" class="btn-outline-primary">Register</button>
 
 	 		<button name="btnlogin" type="submit" id="btn2" class="btn-outline-success">
-	 		<a href="login.php"> Click Here To Login</a></button>
+	 		<a style="text-decoration: none;" href="login_partner.php"> Click Here To Login</a></button>
 
 	 		</form>
 

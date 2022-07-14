@@ -159,7 +159,7 @@
 	 		<button name="btnregister" type="submit" class="btn-outline-primary">Register</button>
 
 	 		<button name="btnlogin" type="submit" id="btn2" class="btn-outline-success">
-	 		<a href="login.php" style="text-decoration: none;"> Click Here To Login</a></button>
+	 		<a href="login_victim.php" style="text-decoration: none;"> Click Here To Login</a></button>
 
 	 		</form>
 

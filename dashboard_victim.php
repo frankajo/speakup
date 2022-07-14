@@ -1,7 +1,7 @@
 
 	<?php 
-   session_start();
-		include_once("header.php");
+  session_start();
+		include_once("nav_victim.php");
 	?>
 
   <!-- Page Content -->
@@ -16,17 +16,12 @@
     				echo $_SESSION['myrole'];
     		}
 
-        if (isset($_SESSION['victim_id'] )) {
-          echo $_SESSION['victim_id'];
-        }
-
     	?>
     	
       <small>Victims Page</small>
     </h1>
 
-        <h5>Welcome 
-
+        <h5>Welcome
           <?php
 
             if (isset($_SESSION['firstname'] )) {
@@ -92,6 +87,6 @@
   <!-- /.container -->
 
   <?php 
-		include_once("footer.php");
+		include_once("logfooter.php");
 	?>
 	
