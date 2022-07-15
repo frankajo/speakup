@@ -1,4 +1,4 @@
-
+ 
  <?php  
 include_once "constants.php";
 
@@ -115,6 +115,38 @@ class Complaint{
 				return $result->fetch_assoc();
 		}
 #End getComplaint
+
+
+#Begin delete complaint record
+		public function deleteComplaint($id){
+			//prepare the statement
+			$statement = $this->dbcon->prepare("DELETE FROM complaint WHERE complaint_id=?");
+
+			//bind param
+			$statement->bind_param("i",$id);
+
+			//execute
+
+			$statement->execute();
+
+			//check if record was deleted
+
+			if ($statement->affected_rows ==1) {
+				//redirect to list clubs
+				$msg = "Complaint was successfully deleted!";
+				header("location:listcomplaint.php?m=$msg");
+				exit;
+			}else{
+				$msg = "Oops! could not delete commplaint record.";
+				header("location:listcomplaint.php?info=$msg");
+				exit;
+			}
+
+		}
+
+
+		#end club record
+
 
 	}
 ?>
