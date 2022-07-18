@@ -81,8 +81,6 @@
 					$_SESSION['victim_id'] = $row['victim_id'];
 					$_SESSION['firstname'] = $row['firstname'];
 					$_SESSION['lastname'] = $row['lastname'];
-					$_SESSION['violence_id'] = $row['violence_id'];
-
 					return true;
 
 				}else{
@@ -93,7 +91,32 @@
 			}
 
 		}
-# end customer login
+# Victim login end here
+
+
+#Begin lisVictim here
+
+		public function listVictim(){
+			// prepare statement
+				$stmt = $this->dbcon->prepare("SELECT * FROM victim");
+
+			// execute
+				$stmt->execute();
+
+			// get result
+				$result = $stmt->get_result();
+
+			// fetch records
+				$records = array();
+				if ($result->num_rows > 0){
+				while ($row = $result->fetch_assoc()){
+				$records[] = $row;
+				}
+			}
+
+			return $records;
+		}
+#End listVictim here
 
 #Begin logout
 

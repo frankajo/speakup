@@ -13,12 +13,12 @@ session_start();
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<style type="text/css">
 
-		body{
+		body{/*
 			background-image: url(images/lib2.jpg);
 			background-position: center;
 			background-size: cover;
 			font-family: sans-serif;
-			margin-top: 40px;
+			margin-top: 40px;*/
 			}
 	</style>
 </head>
@@ -47,11 +47,11 @@ session_start();
 						
 						
 						$partnerid = $_SESSION['partner_id'];
-						$supportid = $_SESSION['support_id'];
+						// $supportid = $_SESSION['support_id'];
 
-						var_dump($partnerid);
+						// var_dump($supportid);
 
-						$output = $resobj->insertResponse($partnerid, $_POST['sup'], $_POST['message']);
+						$output = $resobj->insertResponse($partnerid, $_POST['fullname'], $_POST['sup'], $_POST['message']);
 
 						if ($output == true) {
 							# redirect
@@ -65,6 +65,11 @@ session_start();
 
 
 				<form method="post" action="">
+
+					<div class="mb-3">
+						<label for="fullname">Fullname</label>
+						<input type="text" name="fullname" id="fullname" class="form-control">
+					</div>
 					<div class="mb-3">
 						<label for="sup">Support</label>
 						<select name="sup" id="sup" class="form-select">

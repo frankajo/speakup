@@ -79,7 +79,7 @@
 
 			 			if($output == true){
 			 		//redirect to successfull page
-			 				header("Location: login.php");
+			 				header("Location: login_victim.php");
 			 			}else{
 			 				$errors[] = "Oops! something happened: Try again later";
 			 			}

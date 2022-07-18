@@ -1,4 +1,4 @@
-<?php 
+// <?php 
 session_start();
 
 #import constant file
@@ -52,7 +52,7 @@ session_start();
 
 			// create session variables
 					session_start();
-					$_SESSION['admin_id'] = $row['partner_id'];
+					$_SESSION['admin_id'] = $row['admin_id'];
 					$_SESSION['fullname'] = $row['fullname'];
 
 					return true;

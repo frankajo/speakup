@@ -120,23 +120,23 @@
   			        <div class="carousel-inner">
 
    				      <div class="carousel-item active">
-    			      <img src="images/lib1a.jpg" class="d-block w-100" alt="my photo">
+    			      <img src="images/hope1.jpg" class="d-block w-100" alt="my photo">
      			      <div class="carousel-caption d-none d-md-block">
        			   	<h4 style="color: white; font-style: italic">You Can Come Out Of An Abusive Environment</h4>
      			      </div>
     		        </div>
 
     		         <div class="carousel-item">
-     			       <img src="images/lib2a.jpg" class="d-block w-100" alt="my photo">
+     			       <img src="images/adv1.jpg" class="d-block w-100" alt="my photo">
      		 	       <div class="carousel-caption d-none d-md-block">
      		        	<h4 style="color: Black; font-style: italic">The Joy Of Liberty</h4>
      			       </div> 
     		         </div>
 
     		       <div class="carousel-item">
-      		    	<img src="images/sayno2b.jpg" class="d-block w-100" alt="my photo">
+      		    	<img src="images/lib2.jpg" class="d-block w-100" alt="my photo">
       		    	<div class="carousel-caption d-none d-md-block">
-     			      <h4 style="color: Black; font-style: italic">You Can Say NO</h4>
+     			      <h4 style="color: Black; font-style: italic">There is Hope For You</h4>
     		     	  </div>
    			      </div>
 
@@ -188,15 +188,15 @@
 <!--Images to ilustrate the need to stop violence and say no to domestic violence-->
 					  <div class="row">
 					  		<div class="col-md-4 mt-3">
-					  			<img src="images/adv1.jpg" alt="myphoto" class="img-fluid">
+					  			<img src="images/sayno1.jpg" alt="myphoto" class="img-fluid">
 					  		</div>
 
 					  		<div class="col-md-4 mt-3">
-					  			<img src="images/hope1.jpg" alt="myphoto" class="img-fluid">
+					  			<img src="images/vio2.jpg" alt="myphoto" class="img-fluid">
 					  		</div>
 
 					  		<div class="col-md-4 mt-3">
-					  				<img src="images/lib2.jpg" alt="myphoto" class="img-fluid">
+					  				<img src="images/med2.jpg" alt="myphoto" class="img-fluid">
 					  		</div>
 					  	</div>
 

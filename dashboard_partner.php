@@ -45,7 +45,7 @@
                 </div>
                 <div class="mr-5">Partner</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="">
+              <a class="card-footer text-white clearfix small z-1" href="listcomplaint.php">
                 <span class="float-left">View Complaint</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="mr-5">Partner</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="allcomplaint.php">
+              <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View All Complaints</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>

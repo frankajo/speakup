@@ -7,9 +7,11 @@
       $data = $compobj->getComplaint($_REQUEST['$complaintid']);
 
 
-      echo "<pre>";
-      print_r($data);
-      echo "</pre>";
+      // echo "<pre>";
+      // print_r($data);
+      // echo "</pre>";
+
+      // exit();
 
       // check if the button is clicked
           if(isset($_POST['btneditcomplaint'])){
@@ -30,29 +32,29 @@
         // $clubname = sanitizeInput($_POST['clubname']);
         // $description = sanitizeInput($_POST['description']);
         // $slogan = sanitizeInput($_POST['slogan']);
-        $year = $_POST['victimid'];
-        $country = $_POST['violenceid'];
-        $clubid = $_POST['message'];
+        $victimid = $_POST['victimid'];
+        $violenceid = $_POST['violenceid'];
+        $message = $_POST['message'];
 
 
       // update record
       
 
-      // reference insertcomplaint
-      $output = $compobj->updateComplaint($victimid, $violenceid, $message);
+      // // reference insertcomplaint
+      // $output = $compobj->updateComplaint($victimid, $complaintid, $violenceid, $message);
 
-      // check if it's successful
-      if ($output == true) {
-          $msg = "Complaint was successfully added";
-          // redirect to listcomplaint
-          header("Location: listcomplaint.php?m=$msg");
+      // // check if it's successful
+      // if ($output == true) {
+      //     $msg = "Complaint was successfully added";
+      //     // redirect to listcomplaint
+      //     header("Location: listcomplaint.php?m=$msg");
 
-        }elseif ($output == 0){
-          $msg = "No Changes was made!";
-            header("Location: listcomplaint.php?m=$msg");
-        }else{
-          $errors[] = "Oops! Could not add complaint. ".$output;
-       }
+      //   }elseif ($output == 0){
+      //     $msg = "No Changes was made!";
+      //       header("Location: listcomplaint.php?m=$msg");
+      //   }else{
+      //     $errors[] = "Oops! Could not add complaint. ".$output;
+      //  }
 
 
      }

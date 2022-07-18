@@ -77,7 +77,7 @@ class Complaint{
 
 		public function listComplaint(){
 			// prepare statement
-				$stmt = $this->dbcon->prepare("SELECT * FROM complaint LEFT JOIN victim ON victim.victim_id = complaint.victim_id");
+				$stmt = $this->dbcon->prepare("SELECT * FROM complaint JOIN victim ON victim.victim_id = complaint.victim_id");
 
 			// execute
 				$stmt->execute();
@@ -143,9 +143,27 @@ class Complaint{
 			}
 
 		}
+#End delete complaint record
 
 
-		#end club record
+// #begin update complaint method 
+// 		public function updateComplaint($complaintid,$victimid,$violenceid,$message){
+
+// 			$statement = $this->dbcon->prepare("UPDATE complaint SET message=? WHERE complaint_id=?");
+// 			//bind parameters
+// 			$statement->bind_param("si", $message,$complaintid);
+
+// 			//execute
+
+// 			$statement->execute();
+
+// 			//check if update was successfully updated
+		
+// 				return $statement->affected_rows;
+			
+// 		}
+// 		#end update complaint method
+
 
 
 	}

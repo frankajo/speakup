@@ -82,9 +82,9 @@
 	 			<h5 align="center">Login</h5>
 
 	 			<?php 
-	 				if(isset($error)){
-	 					echo $error;
-	 				}
+	 				// if(isset($error)){
+	 				// 	echo $error;
+	 				// }
 	 			?>
 
 

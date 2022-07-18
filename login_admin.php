@@ -1,5 +1,5 @@
-  <?php 
-    session_start();
+   <?php 
+  //   session_start();
  
 
    include_once("header.php");
@@ -18,7 +18,7 @@
     // echo "$login";
 
       if ($login == false){
-          $error = "<div class='alert alert-danger'>Invalid Username or Password</div>";
+          $error = "<div class='alert alert-danger text-center'>Invalid Username or Password</div>";
       }else{
         // login successfully, then redirect to dashboard
         header("Location: dashboard_admin.php");
@@ -79,5 +79,5 @@
   </div>
 
   <?php 
-    include_once("footer.php");
+    include_once("logfooter.php");
 ?>

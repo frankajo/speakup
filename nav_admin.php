@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 	<html lang="en">
@@ -28,15 +29,6 @@
 						#nav{
 							background-color: black;
 							border-radius: 10px;
-						}
-
-						.logo{
-							margin-left: 50px;
-							padding-top: 40px;
-							font-family: warnock, display;
-							font-size: 30px;
-							color: white;
-							font-style: oblique;
 						}
 
 						#logoimg{
@@ -87,8 +79,7 @@
 	<div class="row" id="nav">
 
 		<div class="col-md-2">
-			<div class="logo">SpeakUp</div>
-			<!-- <img src="images/logo.jpg" alt="mylogo" id="logoimg"> -->
+			<img src="images/logo.jpg" alt="mylogo" id="logoimg">
 		</div>
 
 		<div class="col-md-10">
@@ -98,7 +89,7 @@
 		   		 <li><a href='services.php'>Services</a></li>
 		    	 <li><a href='supportus.php'>Support Us</a></li>
 		    	 <li><a href='news.php'>News</a></li>
-		    	 
+		    	 <li><a href='offices.php'>Offices</a></li>
 
 
 
@@ -113,7 +104,7 @@
           		</ul>
 		   	   </li>
 
-		   	   <li><a href='signup.php'>SignUp</a></li>
+		   	   <li><a href='login_admin.php'>Logout</a></li>
 		  </ul>
 		</div>
 
@@ -132,5 +123,7 @@
  <!--JS File-->
 	 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 
-		</body>
+			    	</body>
+
+
 	</html>

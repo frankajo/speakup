@@ -1,4 +1,4 @@
-
+ 
  <?php  
 include_once "constants.php";
 
@@ -8,6 +8,7 @@ class Response{
 // member variables
 	public $responseid;
 	public $partnerid;
+	public $fullname;
 	public $supportid;
 	public $message;
 	public $dbcon; // DB connection handler
@@ -52,13 +53,13 @@ class Response{
 
 
 #insert response method Begins here
-		public function insertResponse($partnerid, $supportid, $message){
+		public function insertResponse($partnerid, $fullname, $supportid, $message){
 
 		//prepare the statement
-			$statement = $this->dbcon->prepare("INSERT INTO response(partner_id, support_id, message) VALUES(?,?,?)");
+			$statement = $this->dbcon->prepare("INSERT INTO response(partner_id, fullname, support_id, message) VALUES(?,?,?,?)");
 
 		//bind pthe parameter
-			$statement->bind_param("iis", $partnerid, $supportid, $message);
+			$statement->bind_param("isis", $partnerid, $fullname, $supportid, $message);
 
 		//execute means to click GO inside mql
 			$statement->execute();
@@ -71,6 +72,31 @@ class Response{
 			}
 		}
 #insert reponse method Ends here
+
+
+#Begin listResponse here
+
+		public function listResponse(){
+			// prepare statement
+				$stmt = $this->dbcon->prepare("SELECT * FROM response");
+
+			// execute
+				$stmt->execute();
+
+			// get result
+				$result = $stmt->get_result();
+
+			// fetch records
+				$records = array();
+				if ($result->num_rows > 0){
+				while ($row = $result->fetch_assoc()){
+				$records[] = $row;
+				}
+			}
+
+			return $records;
+		}
+#End listResponse here
 
 	}
 ?>

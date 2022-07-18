@@ -5,13 +5,13 @@
 
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">
-      <small>List Of Complaint</small>
+      <small>All Partners</small>
     </h1>
 
     <div class="row">
       <div class="col-lg-8 mb-4">
 
-        <!-- <a href="#" class="btn btn-primary mb-3">Add Complaint</a> -->
+        <a href="addpertner.php" class="btn btn-primary mb-3">Add Addpartner</a>
         
         <?php if (isset($_REQUEST['m'])) {
         ?>
@@ -41,23 +41,23 @@
           <thread>
             <tr>
               <th>#</th>
-              <th>complaint_id</th>
-              <th>victim_id</th>
-              <th>Violent_id</th>
-              <th>Message</th>
+              <th>Partnerid</th>
+              <th>Fullname</th>
+              <th>Phonenumber</th>
+              <th>Email</th>
               <th>Action</th>
             </tr>
           </thread>
 
           <tbody>
               <?php 
-              include_once("speak/complaint.php");
+              include_once("speak/partner.php");
 
-              // create Complaint object
-              $obj = new Complaint();
+              // create Club object
+              $patobj = new Partner();
 
-              // access listComplaint method
-              $data = $obj->listComplaint(); 
+              // access listClubs method
+              $data = $patobj->listPartner(); 
 
               // echo "<pre>";
               // print_r($data);
@@ -69,19 +69,20 @@
               // loop through the array
               if (count($data)> 0){
               foreach ($data as $key => $value){
-                  $complaintid = $value['complaint_id'];
+                  $partnerid = $value['partner_id'];
                   
               ?>
               <tr>
                 <td>#</td>
-                <td><?php echo $value['complaint_id']?></td>
-                <td><?php echo $value['victim_id']?></td>
-                <td><?php echo $value['violence_id']?></td>
-                <td><?php echo $value['message']?></td>
+                <td><?php echo $value['partner_id']?></td>
+                <td><?php echo $value['fullname']?></td>
+                <td><?php echo $value['phonenumber']?></td>
+                <td><?php echo $value['email']?></td>
 
+                
                 <td>
-                  <a href="editcomplaint.php?complaintid=<?php echo $complaintid ?>"></a>  
-                  <a href="deletecomplaint.php?complaintid=<?php echo $complaintid ?>&violenceid=<?php echo $value['violence_id'];?>"> Delete</a>
+                  <a href="editparner.php?partnerid=<?php echo $partnerid ?>">Edit</a> | 
+                  <a href="deletepartner.php?partnerid=<?php echo $partnerid ?>&fullname=<?php echo $value['fullname'];?>"> Delete</a>
                 </td>
               </tr>
               <?php 

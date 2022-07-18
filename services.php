@@ -187,14 +187,14 @@
 			
 			<div class="row">
 				<div class="col-md-6 mt-3">
-					<h5>Counceling</h5>
+					<h5>Counseling</h5>
 					<span>SpeakUp have a team of professional counselors that interact on a regular basics with victims of domestic violence to help them through the strauma of abuse.<br><br>
 
 					This is also relevant to help a victim of DV heal psychologically and emotionally from the various abuses the have gone through.</span>
 				</div>
 
 				<div class="col-md-6 mt-3">
-					<div id="services"><h5>COUNCELING</h5></div>
+					<div id="services"><h5>COUNSELING</h5></div>
 					<img src="images/coun1.jpg" alt="my photo" class="img-fluid img-thumbnail">
 				</div>
 			</div>

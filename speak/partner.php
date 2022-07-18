@@ -76,7 +76,7 @@
 			// create session variables
 					session_start();
 					$_SESSION['partner_id'] = $row['partner_id'];
-					$_SESSION['victimid'] = $row['victim_id'];
+					$_SESSION['fullname'] = $row['fullname'];
 					$_SESSION[''] = $row[''];
 
 					return true;
@@ -90,6 +90,31 @@
 
 		}
 # end customer login
+
+
+#Begin listPartner here
+
+		public function listPartner(){
+			// prepare statement
+				$stmt = $this->dbcon->prepare("SELECT * FROM partner");
+
+			// execute
+				$stmt->execute();
+
+			// get result
+				$result = $stmt->get_result();
+
+			// fetch records
+				$records = array();
+				if ($result->num_rows > 0){
+				while ($row = $result->fetch_assoc()){
+				$records[] = $row;
+				}
+			}
+
+			return $records;
+		}
+#End listPartner here
 
 #Begin logout
 

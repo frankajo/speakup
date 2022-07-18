@@ -52,7 +52,7 @@ session_start();
 						$victimid = $_SESSION['victim_id'];
 						$violenceid = $_SESSION['violence_id'];
 
-						var_dump($violenceid);
+						// var_dump($violenceid);
 
 						$output = $compobj->insertComplaint($victimid, $_POST['vio'], $_POST['message']);
 
