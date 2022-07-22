@@ -71,10 +71,7 @@
 	<div class="row">
 
 <!-- Image of Justice -->
-	 	<div class="col-md-8 mt-2">
-	 		<img src="images/just2.jpg" alt="my photo" class="" width="740px">
-	 	</div>
-
+	 
 
 <!-- Form dive Start here -->
 		
@@ -96,15 +93,22 @@
 	 		<div>
 	 		<input type="text" name="password" id="password" class="form-control" placeholder="Password">
 	 		</div>	
-
+<!-- 
 	 	    <span style="font-size: 12px"> Forgot Password? Click <span style="color:blue">here</span> to reset <span style="color:blue">
-	 	    </span></span><br>
+	 	    </span></span> --><br>
 
 	 	     <button type="button" class="btn-light" onclick="showpassword()">showpassword</button><br><br>
 	 			
 	 		<div>
 	 		<button type="submit" id="btnlogin" class="btn btn-secondary form-control">Login here</button>
 	 	    </div><br>
+
+
+	 	     <div>
+	 		<button type="submit" id="btnlogin" class="btn btn-success form-control">
+	 			<a href="login_partner.php" style="text-decoration: none; color: white;">Login as Partner</a></button>
+	 	    </div><br>
+
 
 	 	     <div>
 	 		<button type="submit" id="btnlogin" class="btn btn-info form-control">
@@ -117,6 +121,11 @@
 	 	    </span></span>
 	 	</form>
 	 </div>
+
+	 	<div class="col-md-8 mt-2">
+	 		<img src="images/just1.jpg" alt="my photo" class="" width="850px">
+	 	</div>
+
 	</div>
 
 
@@ -159,3 +168,6 @@
 
 
 	</html>
+
+
+  <?php include_once('logfooter.php'); ?>

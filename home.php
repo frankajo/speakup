@@ -57,6 +57,19 @@ include_once("header.php");
 							font-size: 20px;
 						}
 
+						#testimony{
+							background-color: lightgray;
+							height: 300px;
+							width: 60%;
+							margin-left: 250px;
+							border-radius: 20px;
+							margin-top: 50px;
+							margin-bottom: 50px;
+						}
+						#view{
+							margin-left: 300px;
+						}
+
 
 					</style>
 
@@ -68,15 +81,14 @@ include_once("header.php");
 			  
 
 
-<div class="container mt-4">
+<div class="container">
 <!-- Opening of div container -->
 
 	
 
-
 <div class="row">
 <!-- Sliding (carousel) start here -->
-	<div class="col-md-12">
+	<div class="col-md-12 col-xl-12">
 
  		<div id="vio1a" class="carousel slide" data-bs-ride="carousel">
   			<div class="carousel-inner">
@@ -115,7 +127,7 @@ include_once("header.php");
 
 <!-- marquee start here -->	
 		<div class="row">
-		<div class="col-md-12" style="background-color:black; margin-top:10px; margin-bottom: 10px; border-radius: 30px">
+		<div class="col-xl-12 col-md-12" style="background-color:black; margin-top:10px; margin-bottom: 10px; border-radius: 30px">
 			<marquee>
                <h6 style="margin-top:30px; padding-bottom: 10px; color: white";>We are commited to bringing justice to your doorstep</h6>
             </marquee>
@@ -126,7 +138,7 @@ include_once("header.php");
 
 <!-- What Domestic violence is all about-->
 		<div class="row">
-			<div class="col-md-12 mt-4">
+			<div class="col-md-12 col-sm-6 mt-4">
 				<h3>What is Domestic Violence?</h3>
            <p>Domestic Violence is a pattern of behaviors used by one partner to maintain power and control over another in a relationship.<br> SpeakeUp Team works with victims/survivors of intimate partner abuse, where the abuser is an intimate partner<br> such as a spouse or ex-spouse, boyfriend/girlfriend, and/or ex-boyfriend/ex-girlfriend. <br><br>
 
@@ -140,23 +152,23 @@ include_once("header.php");
 
 <!-- The Various Div Departments -->
 			<div class="row">
-				<div class="col-md-12 mt-3"><h3>DEPARTMENTS</h3></div>
+				<div class="col-md-12 col-sm-6 mt-3"><h3>DEPARTMENTS</h3></div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-4 mt-2">
+				<div class="col-md-4 col-sm-2 mt-2">
 					<p>
 					 <a href="hr.html"><img src="images/just3.jpg" alt="my photo" class="img-fluid img-thumbnail"></a>
 					</p>
 				</div>
 
-				<div class="col-md-4 mt-2">
+				<div class="col-md-4 col-sm-2 mt-2">
 					<p>
 					 <a href="citizen.html.html"><img src="images/hun1.jpg" alt="my photo" class="img-fluid img-thumbnail"></a>
 					</p>
 				</div>
 
-				<div class="col-md-4 mt-2">
+				<div class="col-md-4 col-sm-2 mt-2">
 					<p>
 					 <a href="counceling.html"><img src="images/coun1.jpg" alt="my photo" class="img-fluid img-thumbnail"></a>
 					</p>
@@ -165,16 +177,16 @@ include_once("header.php");
 
 
 			<div class="row">
-				<div class="col-md-4 mt-2"><p id="dep">Administration And Human Resources</p></div>
-				<div class="col-md-4 mt-2"><p id="dep">Citizen's Right</p></div>
-				<div class="col-md-4 mt-2"><p id="dep">Counceling</p></div>
+				<div class="col-md-4 col-sm-2 mt-2"><p id="dep">Administration And Human Resources</p></div>
+				<div class="col-md-4 col-sm-2 mt-2"><p id="dep">Citizen's Right</p></div>
+				<div class="col-md-4 col-sm-2 mt-2"><p id="dep">Counseling</p></div>
 			</div>
 <!-- The Deparment div ends here -->
 
 
 <!-- Words on the need to Stop Domestic violence start here -->
 			<div class="row">
-				<div class="col-md-12 mt-4">
+				<div class="col-md-12 col-sm-6 mt-4">
 
 										<h3>Why We Must Stop Domestic Violence</h3>
 					 <p> The biggest reason why domestic violence and sexual assault remain so prevalent today is because of silence and lack of knowledge.<br> If you don’t think they’re still common, you should know that one in eight women will experience some form of sexual violence<br> in their lifetime. In Nigeria, women experience more than 500,000 intimate partner-related<br> physical assaults and rapes each year.</p>
@@ -190,19 +202,34 @@ include_once("header.php");
 
 <!-- Images and need to stop domestic vilence starts here-->		
 			<div class="row">
-				<div class="col-md-6 mt-3">
+				<div class="col-md-6 col-sm-3 mt-3">
 						<p>
 					 <img src="images/vio2.jpg" alt="my photo" class="img-fluid img-thumbnail">
 					  </p>
 				 </div>
 
-				  <div class="col-md-6 mt-3">
+				  <div class="col-md-6 col-sm-3 mt-3">
 						<p>
 					 <img src="images/vio4.jpg" alt="my photo" class="img-fluid img-thumbnail">
 					</p>
 				</div>
 			</div>
 <!-- Images and need to stop domestic vilence ends here-->
+
+
+<!--Testimonia div Starts here-->
+		<div class="row">
+			<div class="col-md-12 col-sm-12 mt-4">
+				<h2 align="center" style="margin-top: 20px">Testimonials</h2>
+				<div id="testimony">
+					<h3 style="margin-top:30px">My Husband Abandoned Me For 3years</h3><br>
+					<p>This is a story of a woman who her husband abandoned for 2 years she reported the matter to SpeakUp foundation, then the foundation after carefully looked into the matter, provided her a legal service and within the duration of judgment the foundation all provide her and her children all the neccessary relief materials and  financial aids.</p>
+					<button type="text" name="view" id="view" class="btn btn-danger">
+						<a href="testimony.php" style="text-decoration:none; color:white;">View All Testimonials</a></button>
+				</div>
+			</div>
+		</div>
+<!--Testimonia div Ends here-->
 
 		
 <!--losing of div container -->

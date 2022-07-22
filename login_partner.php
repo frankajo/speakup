@@ -73,21 +73,14 @@
 
 <!-- Image of Justice -->
     <div class="col-md-8 mt-2">
-      <img src="images/just2.jpg" alt="my photo" class="" width="740px">
+      <img src="images/partners2.jpg" alt="my photo" class="" width="1300px">
     </div>
 
 
 <!-- Form dive Start here -->
     
     <div class="col-md-4 mt-4" mt-4>
-        <h5 align="center">Login</h5>
-
-        <?php 
-          if(isset($error)){
-            echo $error;
-          }
-        ?>
-
+        <h5 align="center">Partner Login</h5>
 
       <form method="post" action="" onsubmit="return login()">
         
@@ -96,10 +89,10 @@
       
       <div>
       <input type="text" name="password" id="password" class="form-control" placeholder="Password">
-      </div>  
-
+      </div> <br>
+<!-- 
         <span style="font-size: 12px"> Forgot Password? Click <span style="color:blue">here</span> to reset <span style="color:blue">
-        </span></span><br>
+        </span></span><br> -->
 
          <button type="button" class="btn-light" onclick="showpassword()">showpassword</button><br><br>
         
@@ -107,9 +100,9 @@
       <button type="submit" id="btnlogin" class="btn btn-secondary form-control">Login here</button>
         </div><br>
 
-      <span style="font-size: 12px">Don't have an account yet? Click <span style="color:blue"><a href="signup.php">here</a></span> to sign up.
+      <!-- <span style="font-size: 12px">Don't have an account yet? Click <span style="color:blue"><a href="signup.php">here</a></span> to sign up.
       <span style="color:blue">
-        </span></span>
+        </span></span> -->
     </form>
    </div>
   </div>
@@ -154,3 +147,7 @@
 
 
   </html>
+
+
+
+  <?php include_once('logfooter.php'); ?>

@@ -21,12 +21,12 @@ include ('header.php');
 			min-height: 100px;
 		}
 
-		body{
+		body{/*
 			background-image: url(images/spk4.jpg);
 			background-position: center;
 			background-size: cover;
 			font-family: sans-serif;
-			margin-top: 40px;
+			margin-top: 40px;*/
 			}
 		
 	</style>
@@ -38,38 +38,25 @@ include ('header.php');
 
 	<div class="container">
 
-		<div class="row mt-3">
-			<div class="col-md-3">
-				<h5>msg 1</h5>
-			</div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-		</div>
-
 		
 		<div class="row mt-3">
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
+
+			<?php 
+				include_once 'speak/complaint.php';
+				$obj = new Complaint();
+				$complaint = $obj->listComplaint();
+
+					foreach($complaint as $key=>$value){
+
+				 ?>
+				
+				<div class="col-md-3"><?php echo $value['message'] ?></div>
+				
+				<?php 
+				}
+			?>
 		</div>
-
-
-		<div class="row mt-3">
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-		</div>
-
-
-		<div class="row mt-3">
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-		</div>
+		
 
 	</div>
 

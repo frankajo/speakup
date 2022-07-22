@@ -97,7 +97,7 @@
 
 <!-- Image of Justice -->
 	 	 <div class="col-md-8 mt-2">
-	 		<img src="images/just2.jpg" alt="my photo" class="" width="745px">
+	 		<img src="images/just2.jpg" alt="my photo" class="" width="1300px">
 	 	 </div>
 
 
@@ -122,32 +122,32 @@
 	 		<form method="post" action="" onsubmit="return signup()">
 
 	 			<div class="col-mb-3">
-				<label for="firstname">Firsname</label><span style='color:red'>*</span>
+				<label for="firstname" style="color:#26053E;">Firsname</label><span style='color:red'>*</span>
 		        <input type="text" name="firstname" id="firstname" class="form-control" value="">
 				</div>
 
 				<div class="col-mb-3">
-	 			<label for="lastname">Lastname</label><span style='color:red'>*</span>
+	 			<label for="lastname" style="color:#26053E;">Lastname</label><span style='color:red'>*</span>
 	 			<input type="text" name="lastname" id="lastname" class="form-control" value="">
 	 		 	</div>
 
 	 		 	<div class="col-mb-3">
-	 			<label for="phonenumber">Phonenumber</label><span style='color:red'>*</span>
+	 			<label for="phonenumber" style="color:#26053E;">Phonenumber</label><span style='color:red'>*</span>
 	 			<input type="phone" name="phonenumber" id="phonenumber" class="form-control" value="">
 	 		 	</div>
 
             	<div class="col-mb-3">
-             	 <label for="dob">Date of Birth:</label>
+             	 <label for="dob" style="color:#26053E;">Date of Birth:</label>
               	<input type="date" class="form-control" id="dob" name='dob'>
             	</div>
 
 	 			<div class="col-mb-3">
-	 			<label for="email">Email</label><span style='color:red'>*</span>
+	 			<label for="email" style="color:#26053E;">Email</label><span style='color:red'>*</span>
 	 			<input type="text" name="email" id="email" class="form-control" value="">
 	 			</div>
 
 	 			<div class="col-mb-3">
-	 			<label>Password</label><span style='color:red'>*</span>
+	 			<label style="color:#26053E;">Password</label><span style='color:red'>*</span>
 	 			<input type="password" name="password" id="password" class="form-control" value="">
 	 			</div>
 
@@ -219,3 +219,7 @@
 
 
 	</html>
+
+
+	<?php include_once('logfooter.php'); ?>
+

@@ -27,16 +27,22 @@
 
 			/* Navigation start here */
 						#nav{
-							background-color: black;
+							
+							background-color: #26053E;
 							border-radius: 10px;
 						}
 
-						#logoimg{
-							height: 70px;
-							border-radius: 50px;
-							margin-top: 30px;
+						
+						.logo{
 							margin-left: 50px;
+							padding-top: 40px;
+							font-family: warnock, display;
+							font-size: 30px;
+							color: #F03E3E;
+							font-style: oblique;
 						}
+
+
 
 						ul li{
 
@@ -79,7 +85,8 @@
 	<div class="row" id="nav">
 
 		<div class="col-md-2">
-			<img src="images/logo.jpg" alt="mylogo" id="logoimg">
+			<div class="logo">SPEAKUP</div>
+			<!-- <img src="images/logo.jpg" alt="mylogo" id="logoimg"> -->
 		</div>
 
 		<div class="col-md-10">

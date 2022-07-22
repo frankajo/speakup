@@ -22,19 +22,7 @@
     </h1>
 
         <h5>Welcome
-          <?php
-
-            if (isset($_SESSION['firstname'] )) {
-          echo $_SESSION['firstname'];
-
-        }
-
-           if (isset($_SESSION['lastname'] )) {
-          echo $_SESSION['lastname'];
-        }
-
-        
-        ?>
+          
             <!-- <br>feel free to speak up. -->
         </h5>
 
@@ -76,6 +64,24 @@
             </div>
           </div>
 
+
+            
+          <div class="col-xl-6 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div>
+                  <i class="fa fa-comment"></i>
+                </div>
+                <div class="mr-5">Feedback</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="listresponse.php">
+                <span class="float-left">View Response</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
 		
 	<!-- /.row -->
 
@@ -84,8 +90,9 @@
 	<!-- /.row -->
 
   </div>
-  <!-- /.container -->
 
+  <!-- /.container -->
+</div>
   <?php 
 		include_once("logfooter.php");
 	?>

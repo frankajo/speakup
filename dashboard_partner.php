@@ -1,7 +1,7 @@
 
   <?php 
   session_start();
-  include_once "nav_partner.php";
+  include_once "nav.php";
   ?>
 
   <!-- Page Content -->

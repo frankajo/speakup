@@ -91,7 +91,7 @@
 
 <!-- Image of Justice -->
 	 	 <div class="col-md-8 mt-2">
-	 		<img src="images/just2.jpg" alt="my photo" class="" width="745px">
+	 		<img src="images/partners1.jpg" alt="my photo" class="" width="1310px">
 	 	 </div>
 
 
@@ -118,23 +118,23 @@
 	 		<form method="post" action="" onsubmit="return signup()">
 
 	 			<div class="col-mb-3">
-				<label for="fullname">Fullname</label><span style='color:red'>*</span>
-		        <input type="text" name="fullname" id="firstname" class="form-control" value="">
+				<label for="fullname" style="color:#26053E;">Fullname</label><span style='color:red'>*</span>
+		        <input type="text" name="fullname" id="firstname" class="form-control" placeholder="fullname" value="">
 				</div>
 
 	 		 	<div class="col-mb-3">
-	 			<label for="phonenumber">Phonenumber</label><span style='color:red'>*</span>
-	 			<input type="phone" name="phonenumber" id="phonenumber" class="form-control" value="">
+	 			<label for="phonenumber" style="color:#26053E;">Phonenumber</label><span style='color:red'>*</span>
+	 			<input type="phone" name="phonenumber" id="phonenumber" class="form-control" placeholder="phonenumber" value="">
 	 		 	</div>
 
 	 			<div class="col-mb-3">
-	 			<label for="email">Email</label><span style='color:red'>*</span>
-	 			<input type="text" name="email" id="email" class="form-control" value="">
+	 			<label for="email" style="color:#26053E;">Email</label><span style='color:red'>*</span>
+	 			<input type="text" name="email" id="email" class="form-control" placeholder="emailaddress" value="">
 	 			</div>
 
 	 			<div class="col-mb-3">
-	 			<label>Password</label><span style='color:red'>*</span>
-	 			<input type="password" name="password" id="password" class="form-control" value="">
+	 			<label style="color:#26053E;">Password</label><span style='color:red'>*</span>
+	 			<input type="password" name="password" id="password" class="form-control" placeholder="password" value="">
 	 			</div>
 
 			    <button type="button" class="btn-light mt-3" onclick="showpassword()">showpassword</button>
@@ -206,3 +206,5 @@
 
 
 	</html>
+
+	<?php include_once('logfooter.php'); ?>

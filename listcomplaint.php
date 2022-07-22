@@ -1,4 +1,4 @@
- <?php include_once("header.php"); ?>
+ <?php include_once("nav.php"); ?>
 
   <!-- Page Content -->
   <div class="container">
@@ -45,7 +45,7 @@
               <th>victim_id</th>
               <th>Violent_id</th>
               <th>Message</th>
-              <th>Action</th>
+             <!--  <th>Action</th> -->
             </tr>
           </thread>
 
@@ -81,7 +81,7 @@
 
                 <td>
                   <a href="editcomplaint.php?complaintid=<?php echo $complaintid ?>"></a>  
-                  <a href="deletecomplaint.php?complaintid=<?php echo $complaintid ?>&violenceid=<?php echo $value['violence_id'];?>"> Delete</a>
+                  <a href="deletecomplaint.php?complaintid=<?php echo $complaintid ?>&violenceid=<?php echo $value['violence_id'];?>"> <!-- Delete --></a>
                 </td>
               </tr>
               <?php 

@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 
 #import constant file
 	include_once("constants.php");
@@ -81,6 +81,8 @@
 					$_SESSION['victim_id'] = $row['victim_id'];
 					$_SESSION['firstname'] = $row['firstname'];
 					$_SESSION['lastname'] = $row['lastname'];
+					$_SESSION['mylogger'] = 'frankTech';
+					$_SESSION['myemail'] = $row['email'];
 					return true;
 
 				}else{

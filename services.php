@@ -33,7 +33,7 @@
 
 			/*background picture start here*/
 						#background{
-							margin-top: 15px;
+							margin-top:px;
 							background-image: url(images/just1.jpg);
 							height: 650px;
 							background-repeat: no-repeat;

@@ -30,8 +30,9 @@
 
 			/*Footer start here*/
 						#footer{
-							background-color: black;
+							background-color: #26053E;
 							border-radius: 10px;
+
 						}
 
 						li a{
@@ -58,17 +59,17 @@
 <div class="container">
 	
 <!--The Footer Div Here-->					    			
-					<div class="row mt-3">
+					
 
 					    	<div class="row">
 
-					    		<div class="col-md-12 mt-3" id="footer">
+					    		<div class="col-md-12" id="footer">
 					    			<p style="color:white; padding-top:10px" align="center"><i>@2022 by SpeakUp / Terms of Use / Privacy Policy...</i></p>
 					    		</div>
 					    	</div>
 
 <!-- Footer Div Ends Here -->
-					</div>
+					
 				
 					
 		

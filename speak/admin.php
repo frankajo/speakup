@@ -30,7 +30,7 @@ session_start();
 	#End construct here
 			
 
-# Begin victim login
+# Begin Admin login
 		public function login($email, $password){
 		// prepare statement
 			$statement = $this->dbcon->prepare("SELECT * FROM admin WHERE email = ?");
@@ -65,7 +65,7 @@ session_start();
 			}
 
 		}
-# end customer login
+# End Admin login
 
 #Begin logout
 

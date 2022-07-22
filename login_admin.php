@@ -32,9 +32,8 @@
 <!-- Page Content -->
   <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3 text-center">Admin
-      <small>Login</small>
+    <!-- Page Heading -->
+    <h1 class="mt-4 mb-3 text-center">Admin<small>Login</small>
     </h1>
 
     <?php 
@@ -60,22 +59,19 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Username</label>
                   <input type="text" name='username' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div><hr>
+                </div><br>
 
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" name='pwd' class="form-control" id="exampleInputPassword1">
-                </div><br><br>
+                </div><br>
                 
-                <button type="submit" class="btn btn-info btn-block">Login</button>
+                <button type="submit" class="btn btn-danger btn-block">Login Here</button>
         </form>
-      </div>
-    
-     
-      
-     
+      </div>   
       
     </div>
+    
   </div>
 
   <?php 

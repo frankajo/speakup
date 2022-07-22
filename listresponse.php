@@ -1,4 +1,4 @@
- <?php include_once("header.php"); ?>
+ <?php include_once("nav.php"); ?>
 
   <!-- Page Content -->
   <div class="container">
@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col-lg-8 mb-4">
 
-        <a href="#" class="btn btn-primary mb-3">Add Support</a>
+       <!--  <a href="#" class="btn btn-primary mb-3">Add Support</a> -->
         
         <?php if (isset($_REQUEST['m'])) {
         ?>
@@ -44,7 +44,7 @@
               <th>Partner_id</th>
               <th>Fullname</th>
               <th>Message</th>
-              <th>Action</th>
+              
             </tr>
           </thread>
 
@@ -77,10 +77,7 @@
                 <td><?php echo $value['fullname']?></td>
                 <td><?php echo $value['message']?></td>
 <td>
-                  <a href="editresponse.php?responseid=<?php echo $responseid ?>"></a>  
-                  <a href="deleteresponse.php?responseid=<?php echo $responseid ?>&supportid=<?php echo $value['support_id'];?>"> Delete</a>
-                </td>
-              </tr>
+                 <!--  -->
               <?php 
                   }
                 }

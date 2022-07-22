@@ -77,7 +77,7 @@
 					session_start();
 					$_SESSION['partner_id'] = $row['partner_id'];
 					$_SESSION['fullname'] = $row['fullname'];
-					$_SESSION[''] = $row[''];
+					$_SESSION[''] = $row['email'];
 
 					return true;
 

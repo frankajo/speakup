@@ -26,8 +26,13 @@
 
 			/* Navigation start here */
 						#nav{
-							background-color: black;
+							background-color: #26053E;
 							border-radius: 10px;
+						}
+						#button{
+							background-color:#F03E3E;
+							border-radius: 30px;
+							padding: 10px;
 						}
 
 						.logo{
@@ -35,15 +40,8 @@
 							padding-top: 40px;
 							font-family: warnock, display;
 							font-size: 30px;
-							color: white;
+							color: #F03E3E;
 							font-style: oblique;
-						}
-
-						#logoimg{
-							height: 70px;
-							border-radius: 50px;
-							margin-top: 30px;
-							margin-left: 50px;
 						}
 
 						ul li{
@@ -87,7 +85,7 @@
 	<div class="row" id="nav">
 
 		<div class="col-md-2">
-			<div class="logo">SpeakUp</div>
+			<div class="logo">SPEAKUP</div>
 			<!-- <img src="images/logo.jpg" alt="mylogo" id="logoimg"> -->
 		</div>
 
@@ -96,7 +94,7 @@
 	      		<li><a href='home.php'>Home</a></li>
 	       	     <li><a href='about.php'>About Us</a></li>
 		   		 <li><a href='services.php'>Services</a></li>
-		    	 <li><a href='supportus.php'>Support Us</a></li>
+		    	 <li><a href='supportus.php'>Get Involve</a></li>
 		    	 <li><a href='news.php'>News</a></li>
 		    	 
 
@@ -113,7 +111,12 @@
           		</ul>
 		   	   </li>
 
+
 		   	   <li><a href='signup.php'>SignUp</a></li>
+		   	   <li><a href='login_victim.php'>Login</a></li>
+
+			<button type="button" name="button" id="button"  style="margin-left:30px">
+			<a href="" style="text-decoration:none; color:white;">Donate Now</a></button>
 		  </ul>
 		</div>
 

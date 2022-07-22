@@ -55,7 +55,8 @@
 							font-style: italic;
 							font-family: algerian;
 							text-align: center;
-							padding-top: 300px;
+							padding-top: 250px;
+							margin-left: 50px;
 						}
 
 							h5{
@@ -88,7 +89,7 @@
 
 <!--Background image div starts here-->	
 				<div class="row">
-					  <div class="background mt-2">
+					  <div class="background">
 					  	<div class="overlay">
 
 					  		<h1>About Us</h1>
